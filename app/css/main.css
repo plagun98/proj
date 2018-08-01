@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+  background-color: #21212157 57;
+}
+header {
+  position: relative;
+}
+header:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 9.9rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.first_part {
+  width: 100%;
+  display: block;
+  min-height: -webkit-calc(100vh-9.9rem);
+  min-height: calc(100vh-9.9rem);
+}
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav_col_logo {
+  z-index: 2;
+  margin: 3.8rem;
+  margin-left: 7%;
+}
+.nav_col_logo img {
+  display: block;
+}
+.menu {
+  z-index: 2;
+  width: 100%;
+  margin: 3.8rem;
+  margin-left: 38%;
+  margin-right: 7%;
+}
+.menu_line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu_line span {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.12rem;
+  font-weight: bold;
+  color: white;
+}
+.menu_line span:hover {
+  color: #10c9c3;
+}
+#burger {
+  display: none;
+}
+.bg_image {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -66.5px;
+  z-index: 0;
+  height: -webkit-calc(100% + 66.5px);
+  height: calc(100% + 66.5px);
+  overflow: hidden;
+}
+.bg_image:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #212121;
+}
+.image_item img {
+  display: block;
+  width: 100%;
+}
+.wdad {
+  position: relative;
+  width: 100%;
+  margin: 18rem;
+}
+.wdad_article {
+  max-width: 35%;
+}
+.wdad_article_header {
+  margin: 1.6rem;
+}
+.wdad_article_header p {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.26;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #1d1d1d;
+}
+.wdad_article_text {
+  padding: 1.6rem;
+}
+.wdad_article_text p {
+  font-family: 'NunitoSans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.56;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #d1d1d1;
+}
+.button_contact_us {
+  width: 18rem;
+  height: 5.4rem;
+  background-color: #10c9c3;
+  margin: 1.6rem;
+}
+.button_contact_us button {
+  border: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 7;
+  letter-spacing: 1.2px;
+  text-align: center;
+  background-color: #10c9c3;
+}
+.button_contact_us button span {
+  color: #ffffff;
+  width: 100%;
+  max-height: 2.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.second_part {
+  height: 42rem;
+  background-color: #ffffff;
+}
+.about_us {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 10rem 0 10rem;
+}
+.about_us_header p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #191919;
+}
+.about_us_text {
+  margin-top: 4.1rem;
+}
+.about_us_text p {
+  font-family: 'NunitoSans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #787878;
+}
+.about_us_signature {
+  width: 11.5rem;
+  margin: 3.7rem auto;
+}
+@media screen and (max-width: 1000px) {
+  .menu_line span {
+    display: none;
+  }
+  .menu {
+    position: relative;
+  }
+  #burger {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
