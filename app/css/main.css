@@ -15,46 +15,35 @@ html {
   font-size: 10px;
   background-color: #21212157 57;
 }
-header {
-  position: relative;
-}
-header:before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 9.9rem;
-  background-color: rgba(0, 0, 0, 0.3);
-}
 .first_part {
   width: 100%;
   display: block;
-  min-height: -webkit-calc(100vh-9.9rem);
-  min-height: calc(100vh-9.9rem);
+  height: 67rem;
+  background: url("../img/img1.jpg") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 .nav {
   width: 100%;
+  height: 9.9rem;
+  background-color: rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 .nav_col_logo {
-  z-index: 2;
   margin: 3.8rem;
-  margin-left: 7%;
+  margin-left: 10rem;
 }
 .nav_col_logo img {
   display: block;
 }
 .menu {
-  z-index: 2;
   width: 100%;
   margin: 3.8rem;
-  margin-left: 38%;
-  margin-right: 7%;
+  margin-left: 52rem;
+  margin-right: 10rem;
 }
 .menu_line {
   display: -webkit-box;
@@ -81,38 +70,13 @@ header:before {
 #burger {
   display: none;
 }
-.bg_image {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: -66.5px;
-  z-index: 0;
-  height: -webkit-calc(100% + 66.5px);
-  height: calc(100% + 66.5px);
-  overflow: hidden;
-}
-.bg_image:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  background-color: #212121;
-}
-.image_item img {
-  display: block;
-  width: 100%;
-}
 .wdad {
   position: relative;
   width: 100%;
-  margin: 18rem;
+  padding: 12rem;
 }
 .wdad_article {
-  max-width: 35%;
+  max-width: 50rem;
 }
 .wdad_article_header {
   margin: 1.6rem;
@@ -122,7 +86,6 @@ header:before {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.8rem;
   font-weight: 900;
-  line-height: 1.26;
   letter-spacing: 0.4px;
   text-align: left;
   color: #1d1d1d;
@@ -151,7 +114,6 @@ header:before {
   height: 100%;
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 7;
   letter-spacing: 1.2px;
   text-align: center;
   background-color: #10c9c3;
@@ -187,7 +149,6 @@ header:before {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   font-weight: 900;
-  line-height: 2;
   letter-spacing: 0.3px;
   text-align: center;
   color: #191919;
@@ -208,6 +169,241 @@ header:before {
   width: 11.5rem;
   margin: 3.7rem auto;
 }
+.third_part {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 57rem;
+  background: #f8f9f9;
+}
+.empty_bg {
+  width: 100%;
+  background: url("../img/img3.jpg") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.percent {
+  background-color: black;
+  width: 50rem;
+  height: 3px;
+  z-index: 0;
+}
+.leftside1 {
+  background-color: #10c9c3;
+  height: 100%;
+  width: 0%;
+  z-index: 5;
+  -webkit-transform: scaleY(1.5);
+      -ms-transform: scaleY(1.5);
+          transform: scaleY(1.5);
+  -webkit-animation: percent-animation1 5s linear;
+          animation: percent-animation1 5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.leftside2 {
+  background-color: #10c9c3;
+  height: 100%;
+  width: 0%;
+  z-index: 5;
+  -webkit-transform: scaleY(1.5);
+      -ms-transform: scaleY(1.5);
+          transform: scaleY(1.5);
+  -webkit-animation: percent-animation2 5s linear;
+          animation: percent-animation2 5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.leftside3 {
+  background-color: #10c9c3;
+  height: 100%;
+  width: 0%;
+  z-index: 5;
+  -webkit-transform: scaleY(1.5);
+      -ms-transform: scaleY(1.5);
+          transform: scaleY(1.5);
+  -webkit-animation: percent-animation3 5s linear;
+          animation: percent-animation3 5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.prof_skills {
+  width: 100%;
+  padding: 16rem 9rem;
+}
+.prof_skills_header p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #171717;
+}
+.design p,
+.web p,
+.marketing p {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #000000;
+  padding-top: 4rem;
+  padding-bottom: 1.9rem;
+}
+.marketing p {
+  text-transform: uppercase;
+}
+.fourth_part {
+  background-color: #10c9c3;
+}
+.container4 {
+  padding: 10rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.projects,
+.hours,
+.feedback,
+.clients {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #ffffff;
+}
+.name {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #ffffff;
+}
+.logo {
+  padding-right: 2.8rem;
+  display: block;
+}
+.fifth_part {
+  width: 100%;
+  height: 60rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.pic_cube {
+  width: 25%;
+  height: 30rem;
+  background: url("../img/brain.jpg") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.pic_cube:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.transparent {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.transparent img {
+  padding: 10rem;
+  margin: auto 0;
+  display: none;
+}
+.transparent:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.transparent:hover img {
+  display: block;
+}
+.sixth_part {
+  width: 100%;
+  height: 10rem;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sixth_part a {
+  margin: auto 0;
+}
+.sixth_part p {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #8e8e8e;
+}
+.seventh_part {
+  width: 100%;
+  height: 93rem;
+}
+.owp {
+  margin: 10rem auto 0;
+  width: 50rem;
+}
+.owp_header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #191919;
+  padding-bottom: 4rem;
+}
+.owp_text {
+  font-family: 'NunitoSans', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #787878;
+}
+.video {
+  max-height: 57.1rem;
+  width: 100%;
+  padding: 5.7rem 9.8rem 10rem 9.8rem;
+}
+.video video {
+  max-width: 117rem;
+  display: block;
+}
 @media screen and (max-width: 1000px) {
   .menu_line span {
     display: none;
@@ -218,5 +414,53 @@ header:before {
   #burger {
     display: block;
     font-size: 2.5rem;
+  }
+}
+@-webkit-keyframes percent-animation1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes percent-animation1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@-webkit-keyframes percent-animation2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes percent-animation2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes percent-animation3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes percent-animation3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
   }
 }
