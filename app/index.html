@@ -20,8 +20,8 @@
             <div class="menu">
                 <ul class="menu_line">
                     <li><a href="#"><span>home</span></a></li>
-                    <li><a href="#"><span>about</span></a></li>
-                    <li><a href="#"><span>work</span></a></li>
+                    <li><a href="#about"><span>about</span></a></li>
+                    <li><a href="#work"><span>work</span></a></li>
                     <li><a href="#"><span>process</span></a></li>
                     <li><a href="#"><span>services</span></a></li>
                     <li><a href="#"><span>testimonials</span></a></li>
@@ -46,6 +46,7 @@
     </div>
     <div class="second_part">
         <div class="about_us">
+            <a name="about"></a>
             <div class="about_us_header">
                 <p id="about_us_header">About us</p>
             </div>
@@ -93,7 +94,7 @@
                     <div class="number">
                         <p>548</p>
                     </div>
-                    <div class="name">
+                    <div class="named">
                         <p>projects completed</p>
                     </div>
                 </div>
@@ -106,7 +107,7 @@
                     <div class="number">
                         <p>1465</p>
                     </div>
-                    <div class="name">
+                    <div class="named">
                         <p>working hours</p>
                     </div>
                 </div>
@@ -119,7 +120,7 @@
                     <div class="number">
                         <p>612</p>
                     </div>
-                    <div class="name">
+                    <div class="named">
                         <p>positive feedbacks</p>
                     </div>
                 </div>
@@ -132,7 +133,7 @@
                     <div class="number">
                         <p>735</p>
                     </div>
-                    <div class="name">
+                    <div class="named">
                         <p>happy clients</p>
                     </div>
                 </div>
@@ -153,6 +154,7 @@
         <a href="#"><p>load more work</p></a>
     </div>
     <div class="seventh_part">
+        <a name="work"></a>
         <div class="owp">
             <div class="owp_header">
                 <p>Our Work Process</p>
@@ -168,5 +170,149 @@
             <iframe width="1170" height="571" src="https://www.youtube.com/embed/RDuwei4RULE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
+    <div class="eighth_part">
+        <div class="carousel-wrapper">
+            <input type="radio" checked="checked" id="slide1" class="carousel-selector" name="carousel-selector" />
+            <input type="radio" id="slide2" class="carousel-selector" name="carousel-selector" />
+            <input type="radio" id="slide3" class="carousel-selector" name="carousel-selector" />
+        
+            <ul class="carousel-items">
+                <li class="carousel-item">
+                    <div class="slide">
+                        <div class="quote">
+                            <p>“ Outstanding job and exceeded all expectations. It was a pleasure 
+                                to work with them on a sizable first project and am looking 
+                                forward to start the next one asap.”</p>
+                        </div>
+                        <div class="author">
+                            <p>michael hopkins</p>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="carousel-item">
+                    <div class="slide">
+                        <div class="quote">
+                            <p>“ Talent wins games, but teamwork and intelligence win championships.”</p>
+                        </div>
+                        <div class="author">
+                            <p>michael jordan</p>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="carousel-item">
+                    <div class="slide">
+                        <div class="quote">
+                            <p>“ The best teamwork comes from men who are working independently toward one goal in unison.”</p>
+                        </div>
+                        <div class="author">
+                            <p>james cash penney</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        
+            <ul class="carousel-labels">
+                <li class="carousel-label">
+                    <label for="slide1"></label>
+                </li>
+                <li class="carousel-label">
+                    <label for="slide2"></label>
+                </li>
+                <li class="carousel-label">
+                    <label for="slide3"></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ninth_part">
+        <div class="nap_header">
+            <p>Need a Project?</p>
+        </div>
+        <div class="nap_text">
+            <p>Let us know what you're looking for in an agency. We'll take a look and see<br /> 
+                if this could be the start of something beautiful.</p>
+        </div>
+        <div class="client_form">
+            <div class="toplevel">
+                <div class="name">
+                    <input type="text" name="name" placeholder="Your Name" onfocus="if (this.placeholder === 'Your Name') {this.placeholder = '';}" onblur="if (this.placeholder === '') {this.placeholder = 'Your Name';}" required/>
+                </div>
+                <div class="email">
+                    <input type="text" name="email" placeholder="Your Email" onfocus="if (this.placeholder === 'Your Email') {this.placeholder = '';}" onblur="if (this.placeholder === '') {this.placeholder = 'Your Email';}" required/>
+                </div>
+            </div>
+            <div class="your_title">
+                <input type="text" name="title" placeholder="Your Title" onfocus="if (this.placeholder === 'Your Title') {this.placeholder = '';}" onblur="if (this.placeholder === '') {this.placeholder = 'Your Title';}" required/>
+            </div>
+            <div class="comment">
+                <textarea  name="comment" placeholder="Your Comment" wrap="soft" onfocus="if (this.placeholder === 'Your Comment') {this.placeholder = '';}" onblur="if (this.placeholder === '') {this.placeholder = 'Your Comment';}" required></textarea>
+            </div>
+            <div class="button_send">
+                <button><span>send message</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="tenth_part">
+        <div class="weather_left">
+            <div id="weather">
+                <div class="weather__header">
+                    <div class="current__weather">
+                        <div class="weather__icon">
+                            <img id="weather__icon" src="">
+                        </div>
+                        <div id="weather__value" class="weather__value"></div>
+                        <div id="weather__city" class="weather__city"></div>
+                        <div id="weather__time" class="weather__time"></div>
+                        <div id="timeOnClick" class="timeOnClick"></div>
+                    </div>
+                </div>
+                <div class="weather__body">
+                    <div id="weather__list" class="weather__list"></div>
+                </div>
+                <select name="city" id="city">
+                    <option value="0">мое местоположение</option>
+                    <option value="Kiev">Киев</option>
+                    <option value="Lviv">Львов</option>
+                    <option value="Odessa">Одесса</option>
+                </select>
+            </div>
+        </div>
+        <div class="weather_right">
+
+        </div>
+    </div>
+        
+ 
+    <footer>
+        <div class="col1">
+            <p id="heading">Piroll Design, Inc.</p>
+            <p class="usual">© 2017 Piroll. All rights reserved.</p>
+            <p class="usual">Designed by robirurk.</p>
+        </div>
+        <div class="col2">
+            <p class="usual">hello@pirolltheme.com</p>
+            <p class="usual">+44 987 065 908 </p>
+        </div>
+        <div class="col3">
+            <a href="#"><p class="usual">Projects</p></a>
+            <a href="#"><p class="usual">About</p></a>
+            <a href="#"><p class="usual">Services</p></a>
+            <a href="#"><p class="usual">Career</p></a>
+        </div>
+        <div class="col4">
+            <a href="#"><p class="usual">News</p></a>
+            <a href="#"><p class="usual">Events</p></a>
+            <a href="#"><p class="usual">Contacts</p></a>
+            <a href="#"><p class="usual">Legals</p></a>
+        </div>
+        <div class="col5">
+            <a href="#"><p class="usual">Facebook</p></a>
+            <a href="#"><p class="usual">Twitter</p></a>
+            <a href="#"><p class="usual">Instagram</p></a>
+            <a href="#"><p class="usual">Dribbble</p></a>
+        </div>
+    </footer>
 </body>
 </html>

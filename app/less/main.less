@@ -251,7 +251,7 @@ html {
     text-align: left;
     color: #ffffff;
 }
-.name{
+.named{
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -318,7 +318,7 @@ html {
 
 .seventh_part{
     width: 100%;
-    height: 93rem;
+    height: 85rem;
 }
 .owp{
     margin: 10rem auto 0;
@@ -341,7 +341,7 @@ html {
     color: #787878;
 }
 .video{
-    max-height: 57.1rem;
+    //max-height: 57.1rem;
     width: 100%;
     padding: 5.7rem 9.8rem 10rem 9.8rem;
     video{
@@ -350,9 +350,324 @@ html {
     }
 }
 
+.eighth_part{
+    width: 100%;
+    height: 50rem;
+}
+.carousel-items{
+    max-height: 50rem;
+}
+.carousel-items, .carousel-labels {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.carousel-item {
+	display: block;
+	float: left;
+}
 
+.carousel-wrapper {
+    width: 100%;
+    height: 100%;
+	position: relative;
+	background-color: #eee;
+	overflow: hidden;
+}
+.carousel-items {
+	width: 300%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transition: left .5s ease-out;
+	// -o-transition: left .5s ease-out;
+	// -ms-transition: left .5s ease-out;
+	// -moz-transition: left .5s ease-out;
+	// -webkit-transition: left .5s ease-out;
+}
+.carousel-item {
+	width: 33.33333333%;
+	height: 100%;
+    color: white;
+    background-color: #10c9c3;
+}
+.carousel-labels {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+	padding: 6rem 0;
+	text-align: center;
+}
+.carousel-selector {
+	display: none;
+}
+.carousel-label {
+	display: inline-block;
+}
+.carousel-label label {
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 0.3rem;
+	background-color: white;
+	display: block;
+	cursor: pointer;
+}
+.slide{
+    padding: 18rem 28rem 18rem 28rem;
+}
+.quote{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 3.5rem;
+}
+.author{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #ffffff;
+}
 
+#slide1:checked ~ .carousel-items {
+	left: 0;
+}
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
+    transform: scale(1.5);
+}
+#slide2:checked ~ .carousel-items {
+	left: -100%;
+}
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
+    transform: scale(1.5);
+}
+#slide3:checked ~ .carousel-items {
+	left: -200%;
+}
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
+    transform: scale(1.5);
+}
 
+.ninth_part{
+    width: 100%;
+    height: 75rem;
+    background-color: #f5f5f5;
+}
+.nap_header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #1d1d1d;
+    width: 25rem;
+    padding-top: 10rem;
+    margin: 0 auto;
+}
+.nap_text{
+    font-family: 'NunitoSans',sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #787878;
+    margin: 0 auto;
+    padding: 3.5rem 0 3.5rem 0;
+}
+.client_form{
+    width: 67rem;
+    max-height: 41rem;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+}
+.toplevel{
+    display: flex;
+    justify-content: space-between;
+}
+.name, .email{
+    width: 32rem;
+    height: 4.8rem;
+    background-color: #ffffff;
+    input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding-left: 2rem;
+    }
+}
+ .your_title{
+    width: 67rem;
+    height: 4.8rem;
+    background-color: #ffffff;
+    margin-top: 3rem;
+    input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding-left: 2rem;
+    }
+ }
+ .comment{
+    width: 67rem;
+    height: 17rem;
+    background-color: #ffffff;
+    margin-top: 3rem;
+    textarea{
+        width: 67rem;
+        height: 100%;
+        border: none;
+        padding: 1rem 2rem;
+    }
+ }
+ .button_send{
+    width: 18rem;
+    height: 5.4rem;
+    background-color: #10c9c3;
+    margin: 3rem auto;
+    button {
+        border: none;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        text-align: center;
+        background-color: #10c9c3;
+        span{
+            color: #ffffff;
+            width:100%;
+            max-height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+ }
+ .tenth_part{
+     height: 28rem;
+ }
+ .weather_left{
+    background: url("../img/clouds.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+ }
+ #weather {
+    z-index: 2;
+    width: 40%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    select{
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+}
+.current__weather{
+    display: flex;
+    align-items: center;
+    .weather__icon{
+        margin-right: 1rem;
+    }
+    .weather__value{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-right: 1rem;
+    }
+}
+
+.weather__city{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.weather__time{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+.weather__list{
+    display: flex;
+    max-width: 100%;
+    overflow-x: scroll;
+    div{
+        font-size: 1.6rem;
+        padding: 1.5rem 1rem;
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.39);
+        }
+    }
+}
+.timeOnClick{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+select{
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+footer{
+    background-color: #141414;
+    height: 28.4rem;
+    display: flex;
+}
+#heading{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 2.7rem;
+}
+.usual{
+    font-family: 'NunitoSans',sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #bcbcbc;
+    padding-bottom: 0.8rem;
+}
+.col1{
+    padding: 10rem;
+}
+.col2{
+    padding: 10rem 10rem 15rem 10rem;
+}
+.col3{
+    padding: 10rem 5.5rem 10rem 5.5rem;
+}
+.col4{
+    padding: 10rem 0 10rem 0;
+}
+.col5{
+    padding: 10rem 13rem 10rem 13rem;
+}
 
 
 
