@@ -1,0 +1,190 @@
+@media screen and (max-width: 755px) {
+  #burger {
+    display: block;
+    color: #ffffff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+  .menu_line {
+    position: relative;
+  }
+  .menu_line a {
+    display: block;
+  }
+  .menu_line span {
+    padding: 1.5rem;
+    display: none;
+  }
+  .nav_responsive {
+    height: 40rem;
+    position: absolute;
+    background-color: #000000;
+    z-index: 10;
+  }
+  .menu_line_responsive {
+    display: block;
+  }
+  .menu_line_responsive span {
+    display: block;
+    text-align: left;
+  }
+  .burger_responsive {
+    position: absolute;
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+  .wdad {
+    padding: 10%;
+  }
+  .slide {
+    padding-top: 10rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .col1 {
+    padding: 7rem 4% ;
+  }
+  .col2 {
+    padding: 7rem 4% 0 4%;
+  }
+  .col3 {
+    padding: 7rem 4% 0 4%;
+  }
+  .col4 {
+    padding: 7rem 0 0 0;
+  }
+  .col5 {
+    padding: 7rem 4% 0 4%;
+  }
+  #heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 1.5rem;
+  }
+  .usual {
+    font-family: 'NunitoSans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #bcbcbc;
+    padding-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .col1 {
+    padding: 6rem 2% ;
+  }
+  .col2 {
+    padding: 6rem 2% 0 2%;
+  }
+  .col3 {
+    padding: 6rem 2% 0 2%;
+  }
+  .col4 {
+    padding: 6rem 0 0 0;
+  }
+  .col5 {
+    padding: 6rem 2% 0 2%;
+  }
+  #heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 1.5rem;
+  }
+  .usual {
+    font-family: 'NunitoSans', sans-serif;
+    font-size: 7px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #bcbcbc;
+    padding-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .prof_skills {
+    width: 90%;
+    padding: 16rem 5%;
+  }
+  .empty_bg {
+    width: 0%;
+  }
+  .percent {
+    width: 100%;
+  }
+  .content p {
+    font-size: 8px;
+  }
+  .client_form {
+    width: 94%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .toplevel {
+    padding: 0 5px 0 5px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .name {
+    display: block;
+    max-width: 46%;
+  }
+  .email {
+    display: block;
+    max-width: 46%;
+  }
+  .your_title {
+    width: 99%;
+  }
+  .comment {
+    display: block;
+    width: 99%;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .col1 {
+    padding: 7rem 5% ;
+  }
+  .col2 {
+    padding: 7rem 5% 15rem 7%;
+  }
+  .col3 {
+    padding: 7rem 4% 10rem 4%;
+  }
+  .col4 {
+    padding: 7rem 0 10rem 0;
+  }
+  .col5 {
+    padding: 7rem 9% 10rem 9%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .menu_line {
+    padding-left: 20%;
+  }
+  .logo4 {
+    padding-right: 5%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .menu_line {
+    padding-left: 10%;
+  }
+}

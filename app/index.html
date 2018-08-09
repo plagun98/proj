@@ -12,13 +12,16 @@
     <title>Document</title>
 </head>
 <body>
+    <a name="home"></a>
     <div class="first_part">
-        <div class="nav">
-            <a href="#" class="nav_col_logo">
-                <img id="ico" src="../img/logo.png" alt="">
-            </a>
+        <div class="nav" id="nav">
+            <div class="logo">
+                <a href="#" class="nav_col_logo">
+                    <img id="ico" src="../img/logo.png" alt="">
+                </a>
+            </div>
             <div class="menu">
-                <ul class="menu_line">
+                <ul class="menu_line" id="menu_line">
                     <li><a href="#"><span>home</span></a></li>
                     <li><a href="#about"><span>about</span></a></li>
                     <li><a href="#work"><span>work</span></a></li>
@@ -26,7 +29,7 @@
                     <li><a href="#"><span>services</span></a></li>
                     <li><a href="#"><span>testimonials</span></a></li>
                     <li><a href="#"><span>contact</span></a></li>
-                    <li><a href="#" id="burger" class="icon">&#9776</a></li>
+                    <li><div id="burger" class="icon">&#9776</div></li>
                 </ul>
             </div>
         </div>
@@ -43,6 +46,7 @@
                 </div>
             </div>
         </div>
+        <a href="#home"><div class="home_anchor"><img src="../img/arrow.png"/></div></a>
     </div>
     <div class="second_part">
         <div class="about_us">
@@ -66,19 +70,19 @@
             <div class="design">
                 <p>ui/ux design   75%</p>
                 <div class="percent">
-                    <div class="leftside1"></div>
+                    <div class="leftside" id="ls1"></div>
                 </div>
             </div>
             <div class="web">
                 <p>web development   90%</p>
                 <div class="percent">
-                    <div class="leftside2"></div>
+                    <div class="leftside" id="ls2"></div>
                 </div>
             </div>
             <div class="marketing">
                 <p>marketing   65%</p>
                 <div class="percent">
-                    <div class="leftside3"></div>
+                    <div class="leftside" id="ls3"></div>
                 </div>
             </div>
         </div>
@@ -87,7 +91,7 @@
     <div class="fourth_part">
         <div class="container4">
             <div class="projects">
-                <div class="logo">
+                <div class="logo4">
                     <img src="../img/proj.png">
                 </div>
                 <div class="content">
@@ -100,7 +104,7 @@
                 </div>
             </div>
             <div class="hours">
-                <div class="logo">
+                <div class="logo4">
                     <img src="../img/hours.png">
                 </div>
                 <div class="content">
@@ -113,7 +117,7 @@
                 </div>
             </div>
             <div class="feedback">
-                <div class="logo">
+                <div class="logo4">
                     <img src="../img/feedback.png">
                 </div>
                 <div class="content">
@@ -126,7 +130,7 @@
                 </div>
             </div>
             <div class="clients">
-                <div class="logo">
+                <div class="logo4">
                     <img src="../img/client.png">
                 </div>
                 <div class="content">
@@ -163,11 +167,13 @@
                 <p>Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years. </p>
             </div>
         </div>
-        <div class="video">
-            <!-- <video>
-                <source src="../video/mov1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-            </video> -->
-            <iframe width="1170" height="571" src="https://www.youtube.com/embed/RDuwei4RULE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="video_container">
+            <div class="video">
+                <!-- <video>
+                    <source src="../video/mov1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                </video> -->
+                <iframe src="https://www.youtube.com/embed/RDuwei4RULE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
     <div class="eighth_part">
@@ -278,9 +284,6 @@
                     <option value="Odessa">Одесса</option>
                 </select>
             </div>
-        </div>
-        <div class="weather_right">
-
         </div>
     </div>
         

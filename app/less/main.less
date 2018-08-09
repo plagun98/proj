@@ -29,22 +29,18 @@ html {
     height: 9.9rem;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
-    &_col_logo{
-        margin: 3.8rem;
-        margin-left: 10rem;
-        img{
-            display:block;
-        }
-    }
+}
+.logo{
+    padding: 3.8rem 0 0 10rem;
 }
 .menu{
+    display: block;
     width: 100%;
-    margin: 3.8rem;
-    margin-left: 52rem;
-    margin-right: 10rem;
+    //padding: 3.8rem 9.7rem 0 52rem;
     &_line{
         display:flex;
         justify-content: space-between;
+        padding: 3.8rem 7% 0 38%;
         span{
             text-align: center;
             font-size: 1.2rem;
@@ -66,10 +62,11 @@ html {
     position: relative;
     width: 100%;
     padding: 12rem;
+    z-index: 5;
     &_article{
         max-width: 50rem;
         &_header{
-            margin: 1.6rem; 
+            padding: 1.6rem; 
             p{
                 width: 100%;
                 font-family: 'Montserrat', sans-serif;
@@ -172,31 +169,25 @@ html {
     height: 3px;
     z-index: 0;
 }
-.leftside1{
+.leftside{
     background-color: #10c9c3;
     height: 100%;
     width: 0%;
     z-index: 5;
+}
+.anim1{
     transform: scaleY(1.5);
-    animation: percent-animation1 5s linear;
+    animation: percent-animation1 3s linear;
     animation-fill-mode: forwards;
 }
-.leftside2{
-    background-color: #10c9c3;
-    height: 100%;
-    width: 0%;
-    z-index: 5;
+.anim2{
     transform: scaleY(1.5);
-    animation: percent-animation2 5s linear;
+    animation: percent-animation2 3s linear;
     animation-fill-mode: forwards;
 }
-.leftside3{
-    background-color: #10c9c3;
-    height: 100%;
-    width: 0%;
-    z-index: 5;
+.anim3{
     transform: scaleY(1.5);
-    animation: percent-animation3 5s linear;
+    animation: percent-animation3 3s linear;
     animation-fill-mode: forwards;
 }
 .prof_skills{
@@ -236,7 +227,7 @@ html {
     background-color: #10c9c3;
 }
 .container4{
-    padding: 10rem;
+    padding: 10rem 7% 10rem 7%;;
     display: flex;
     justify-content: space-around;
 }
@@ -260,7 +251,7 @@ html {
     text-align: left;
     color: #ffffff;
 }
-.logo{
+.logo4{
     padding-right: 2.8rem;
     display: block;
 }
@@ -318,11 +309,10 @@ html {
 
 .seventh_part{
     width: 100%;
-    height: 85rem;
 }
 .owp{
     margin: 10rem auto 0;
-    width: 50rem;
+    max-width: 50rem;
 }
 .owp_header{
     font-family: 'Montserrat', sans-serif;
@@ -340,13 +330,20 @@ html {
     text-align: center;
     color: #787878;
 }
+.video_container{
+    padding: 5.7rem 7% 10rem 7%;
+}
 .video{
-    //max-height: 57.1rem;
-    width: 100%;
-    padding: 5.7rem 9.8rem 10rem 9.8rem;
-    video{
-        max-width: 117rem;
-        display: block;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    display: block;
+    iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -419,7 +416,7 @@ html {
 	cursor: pointer;
 }
 .slide{
-    padding: 18rem 28rem 18rem 28rem;
+    padding: 18rem 20% 18rem 20%;
 }
 .quote{
     font-family: 'Montserrat', sans-serif;
@@ -523,10 +520,10 @@ html {
     background-color: #ffffff;
     margin-top: 3rem;
     textarea{
-        width: 67rem;
+        max-width: 67rem;
         height: 100%;
         border: none;
-        padding: 1rem 2rem;
+        padding: 1rem 0 1rem  2rem;
     }
  }
  .button_send{
@@ -569,7 +566,7 @@ html {
  }
  #weather {
     z-index: 2;
-    width: 40%;
+    width: 40rem;
     height: 100%;
     border: none;
     border-radius: 10px;
@@ -668,21 +665,23 @@ footer{
 .col5{
     padding: 10rem 13rem 10rem 13rem;
 }
-
-
-
-
-@media screen and (max-width: 1000px){
-    .menu_line span{
-        display: none;
-    }
-    .menu{
-        position: relative;
-    }
-    #burger{
-        display:block;
-        font-size: 2.5rem;
+.home_anchor{
+    position: fixed;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 1.6rem;
+    background-color: #10c9c3;
+    left: 1rem;
+    bottom: 1rem;
+    z-index: 99;
+    img{
+        display: block;
     }
 }
 
+
+
+
+
+@import 'media';
 @import 'animation';

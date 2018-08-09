@@ -1,10 +1,43 @@
 window.onload = function(){ 
 
+    var ls1 = document.getElementById('ls1');
+    var ls2 = document.getElementById('ls2'); 
+    var ls3 = document.getElementById('ls3');
+    window.onscroll = function(){
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled > 864){
+            ls1.classList.add('anim1');
+            if(scrolled > 940){
+                ls2.classList.add('anim2');
+                if(scrolled > 1015){
+                    ls3.classList.add('anim3');
+                }
+            }
+        }
+    }
+
+    var nav = document.getElementById('nav');
+    var menu_burg = document.getElementById('burger');
+    var menu_line = document.getElementById('menu_line');
+    menu_burg.addEventListener('click',function(){
+        if(!nav.classList.contains('nav_responsive')){
+            console.log(nav.classList);
+            nav.classList.add('nav_responsive');
+            menu_line.classList.add('menu_line_responsive');
+            menu_burg.classList.add('burger_responsive');
+        } else{
+            console.log(nav.classList);
+            nav.classList.remove('nav_responsive');
+            menu_line.classList.remove('menu_line_responsive');
+            menu_burg.classList.remove('burger_responsive');
+        }
+    },true);
+
+
     var select = getElement('city');
 
     select.onchange = function(event){
         var val = event.target.value;
-        console.log(val)
         if(val == 0){
             getLocation();
         } else {
@@ -17,10 +50,8 @@ window.onload = function(){
         var userCity = localStorage.getItem('city');
         var url = 'http://api.openweathermap.org/data/2.5/forecast?q='+userCity+',ua&appid=0af240dafbe5c4aae44810aa98092743&units=metric';
         weather(url);
-        console.log('Tut i tak vse est');
     } else {
         getLocation();
-        console.log('Shcha dobavim');
     }
 }
 
@@ -51,7 +82,6 @@ function getLocation(){
            
             var url = 'https://api.openweathermap.org/data/2.5/forecast?lat='+location.loc.split(',')[0]+'&lon='+location.loc.split(',')[1]+'&units=metric&APPID=0af240dafbe5c4aae44810aa98092743'
         }
-        console.log(url);
         weather(url);
     }
     xhr.open('GET','https://ipinfo.io/geo', true);
