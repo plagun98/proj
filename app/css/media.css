@@ -14,6 +14,9 @@
   .col5 {
     padding: 7rem 9% 10rem 9%;
   }
+  .first_part {
+    height: 67rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   .menu_line {
@@ -62,6 +65,12 @@
     color: #bcbcbc;
     padding-bottom: 0.5rem;
   }
+  .empty_bg {
+    width: 0;
+  }
+  .percent {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 755px) {
   #burger {
@@ -109,6 +118,12 @@
   }
   .slide {
     padding-top: 10rem;
+  }
+  .logo {
+    padding-left: 7rem;
+  }
+  .fourth_part .container4 {
+    padding: 6rem 7%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -189,5 +204,25 @@
     text-align: left;
     color: #bcbcbc;
     padding-bottom: 0.5rem;
+  }
+  .slide {
+    padding: 7rem 20%;
+  }
+  .container4 {
+    display: block;
+  }
+  .container41 {
+    padding-bottom: 1rem;
+  }
+  .logo {
+    padding-left: 6rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .slide {
+    padding: 4rem 20%;
+  }
+  .logo {
+    padding-left: 4rem;
   }
 }

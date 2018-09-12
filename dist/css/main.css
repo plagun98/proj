@@ -18,7 +18,7 @@ html {
 .first_part {
   width: 100%;
   display: block;
-  height: 67rem;
+  height: 100vh;
   background: url("../img/img1.jpg") no-repeat;
   -webkit-background-size: cover;
           background-size: cover;

@@ -20,7 +20,7 @@ html {
 .first_part{
     width: 100%;
     display: block;
-    height: 67rem;
+    height: 100vh;
     background: url("../img/img1.jpg") no-repeat;
     background-size: cover;
 }
@@ -41,7 +41,6 @@ html {
 .menu{
     display: block;
     width: 100%;
-    //padding: 3.8rem 9.7rem 0 52rem;
     &_line{
         display:flex;
         justify-content: space-between;
@@ -123,7 +122,6 @@ html {
     }
 }
 .second_part{
-    height: 42rem;
     background-color: #ffffff;
 }
 .about_us{
@@ -154,14 +152,13 @@ html {
     }
     &_signature{
         width: 11.5rem;
-        margin: 3.7rem auto;
+        margin: 0 auto;
     }
 }
 
 .third_part{
     display: flex;
     width: 100%;
-    height: 57rem;
     background: rgb(248, 249, 249);
 }
 .empty_bg{
@@ -233,7 +230,11 @@ html {
     background-color: #10c9c3;
 }
 .container4{
-    padding: 10rem 7% 10rem 7%;;
+    padding: 10rem;
+    display: flex;
+}
+.container41{
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -263,7 +264,6 @@ html {
 }
 .fifth_part{
     width: 100%;
-    height: 60rem; 
     display: flex;
     flex-wrap: wrap;
 }
@@ -295,7 +295,7 @@ html {
 }
 .sixth_part{
     width: 100%;
-    height: 10rem;
+    padding: 4.6rem 0;
     background-color: #f5f5f5;
     display: flex;
     justify-content: center;
@@ -386,10 +386,6 @@ html {
 	top: 0;
 	z-index: 1;
 	transition: left .5s ease-out;
-	// -o-transition: left .5s ease-out;
-	// -ms-transition: left .5s ease-out;
-	// -moz-transition: left .5s ease-out;
-	// -webkit-transition: left .5s ease-out;
 }
 .carousel-item {
 	width: 33.33333333%;
@@ -422,7 +418,7 @@ html {
 	cursor: pointer;
 }
 .slide{
-    padding: 18rem 20% 18rem 20%;
+    padding: 18rem 20%;
 }
 .quote{
     font-family: 'Montserrat', sans-serif;
@@ -560,7 +556,7 @@ html {
     }
  }
  .tenth_part{
-     height: 28rem;
+    height: 28rem;
  }
  .weather_left{
     background: url("../img/clouds.jpg") no-repeat;
@@ -573,7 +569,8 @@ html {
  }
  #weather {
     z-index: 2;
-    width: 40rem;
+    width: 100%;
+    max-width: 40rem;
     height: 100%;
     border: none;
     border-radius: 10px;
@@ -636,7 +633,6 @@ select{
 }
 footer{
     background-color: #141414;
-    height: 28.4rem;
     display: flex;
 }
 #heading{
