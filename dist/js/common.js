@@ -2,27 +2,27 @@ window.onload = function(){
 
     $(window).scroll(function() {
         var scrolled = ($(window).scrollTop()); 
-        if(scrolled > 864){
+        if(scrolled > 800){
             $("#ls1").addClass("anim1");
-            if(scrolled > 940){
+            if(scrolled > 900){
                 $("#ls2").addClass("anim2");
-                if(scrolled > 1015){
+                if(scrolled > 1000){
                     $("#ls3").addClass("anim3");
                 }
             }
         }
     });
 
-    $(window).scroll(function() {
-        var scrolled = ($(window).scrollTop()); 
-        if(scrolled > 500){
-            $("#nav").addClass("nav_fixed");
-            $("#nav").addClass("nav_responsive_fixed");
-        } else {
-            $("#nav").removeClass("nav_fixed");
-            $("#nav").removeClass("nav_responsive_fixed");
-        }
-    });
+    // $(window).scroll(function() {
+    //     var scrolled = ($(window).scrollTop()); 
+    //     if(scrolled > 500){
+    //         $("#nav").addClass("nav_fixed");
+    //         $("#nav").addClass("nav_responsive_fixed");
+    //     } else {
+    //         $("#nav").removeClass("nav_fixed");
+    //         $("#nav").removeClass("nav_responsive_fixed");
+    //     }
+    // });
 
     var nav = document.getElementById('nav');
     var menu_burg = document.getElementById('burger');

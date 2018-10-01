@@ -309,6 +309,7 @@ html {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  overflow: hidden;
 }
 .pic_cube {
   width: 25%;
@@ -316,11 +317,14 @@ html {
   background: url("../img/brain.jpg") no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 .pic_cube:hover {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+  z-index: 500;
 }
 .transparent {
   width: 100%;
